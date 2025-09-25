@@ -1,0 +1,137 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: url("https://images4.alphacoders.com/600/600528.png") no-repeat center center fixed;
+  background-size: cover;
+  color: #00ffcc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+/* Contenedor principal */
+.container {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #00ffcc;
+}
+
+/* Select y botón */
+select {
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  margin-top: 10px;
+  width: 100%;
+  max-width: 250px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: #00ffcc;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #00cc99;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-contenido {
+  background: #111;
+  padding: 25px;
+  border-radius: 10px;
+  text-align: center;
+  color: #fff;
+  width: 80%;
+  max-width: 350px;
+}
+
+.modal-contenido a {
+  color: #00ffcc;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+.cerrar {
+  float: right;
+  font-size: 22px;
+  cursor: pointer;
+  color: red;
+}
+
+/* Redes sociales */
+.social-icons {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons a {
+  font-size: 25px;
+  color: white;
+  background: #111;
+  padding: 12px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+}
+
+.discord { background: #5865F2; }
+.whatsapp { background: #25D366; }
+.facebook { background: #1877F2; }
+.instagram { background: #E1306C; }
+
+/* Botón regresar centrado */
+.contenedor-boton {
+  margin: 30px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.boton {
+  padding: 12px 25px;
+  background: #00ffcc;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.boton:hover {
+  background: #00cc99;
+  color: white;
+  transform: scale(1.05);
+}

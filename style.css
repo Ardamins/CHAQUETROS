@@ -1,0 +1,261 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: url("HD-wallpaper-video-game-league-of-legends-wild-rift.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: #00ff88;
+  min-height: 100vh;
+}
+
+/* Menú superior */
+.menu {
+  background: rgba(0, 0, 0, 0.85);
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.menu h2 {
+  color: #00ff88;
+  margin: 0 0 10px;
+  text-align: center;
+}
+
+.menu ul {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  scrollbar-width: none;
+} 
+
+.menu ul::-webkit-scrollbar { display: none; }
+.menu ul li { flex: 0 0 auto; }
+
+.menu ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  background: #111;
+  padding: 8px 14px;
+  border-radius: 6px;
+  transition: 0.3s;
+  white-space: nowrap;
+}
+
+.menu ul li a:hover {
+  background: #00ff88;
+  color: #000;
+}
+
+/* Contenido central */
+.contenedor {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.lista h3 { margin-bottom: 10px; }
+
+.btn-descargar {
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: #00ff88;
+  border: none;
+  color: black;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-descargar:hover { background: #00cc66; }
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: #111;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  color: #fff;
+}
+
+.modal-content a {
+  display: block;
+  margin: 10px 0;
+  color: #00ff88;
+  text-decoration: none;
+}
+
+.modal-content .cerrar {
+  margin-top: 15px;
+  padding: 10px;
+  background: red;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Servidores */
+.servidores {
+  text-align: center;
+  margin: 40px auto;
+  background: rgba(0,0,0,0.7);
+  padding: 15px;
+  border-radius: 10px;
+  width: fit-content;
+}
+
+/* Redes sociales */
+.social-icons {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 15px;
+  z-index: 1200;
+}
+
+.social-icons a {
+  font-size: 25px;
+  color: white;
+  background: #111;
+  padding: 12px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.social-icons a:hover { transform: scale(1.2); }
+
+/* Marca de agua */
+.marca-agua {
+  position: fixed;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+  background: rgba(0, 0, 0, 0.4);
+  padding: 5px 15px;
+  border-radius: 10px;
+  backdrop-filter: blur(4px);
+  z-index: 1000;
+}
+
+/* Carrusel lateral fijo */
+.carrusel {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  width: 220px;
+  height: 350px;
+  overflow: hidden;
+  background: rgba(0,0,0,0.85);
+  border: 2px solid #00ff00;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 0 15px rgba(0,255,136,0.6);
+  z-index: 1100;
+}
+
+.carrusel-inner {
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carrusel-item {
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #00ff88;
+  padding: 10px;
+}
+
+.carrusel-item img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+/* Botones del carrusel */
+.carrusel-btn {
+  background: rgba(0,0,0,0.6);
+  border: none;
+  color: #00ff00;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 50%;
+  z-index: 1200;
+}
+
+.carrusel-btn:hover {
+  background: rgba(0,255,136,0.8);
+  color: black;
+}
+
+.carrusel-btn.prev { position: absolute; top: 5px; }
+.carrusel-btn.next { position: absolute; bottom: 5px; }
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  .carrusel {
+    width: 160px;
+    height: 260px;
+  }
+
+  .carrusel-item {
+    min-height: 260px;
+  }
+
+  .social-icons a {
+    font-size: 20px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .btn-descargar {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .carrusel {
+    width: 140px;
+    height: 220px;
+  }
+
+  .carrusel-item {
+    min-height: 220px;
+  }
+}
+
+/* Colores de redes */
+.discord { background: #5865F2; }
+.whatsapp { background: #25D366; }
+.facebook { background: #1877F2; }
+.instagram { background: #E1306C; }

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ChaqueterosJCT - Juegos</title>
+  <link rel="stylesheet" href="colorjuego.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>🎮 Juegos - ChaqueterosJCT 🎮</h1>
+  </header>
+
+  <!-- Contenedor de juegos -->
+  <div class="contenedor-juegos">
+
+    <div class="juego-card">
+      <h3>GEOMETRY DASH</h3>
+      <p>GOTY</p>
+      <button onclick="abrirModal('1')" class="btn-juego">Descargar</button>
+    </div>
+
+    <div class="juego-card">
+      <h3>BALATRO</h3>
+      <p>GOTY</p>
+      <button onclick="abrirModal('2')" class="btn-juego">Descargar</button>
+    </div>
+
+    <div class="juego-card">
+      <h3>GTA 3 OPTIMIZADO</h3>
+      <p>GOTY</p>
+      <button onclick="abrirModal('3')" class="btn-juego">Descargar</button>
+    </div>
+
+    <div class="juego-card">
+      <h3>HOLLOW KNIGTH</h3>
+      <p>GOTY</p>
+      <button onclick="abrirModal('4')" class="btn-juego">Descargar</button>
+    </div>
+
+    <div class="juego-card">
+      <h3>LEGO ISLAND</h3>
+      <p>GOTY</p>
+      <button onclick="abrirModal('5')" class="btn-juego">Descargar</button>
+    </div>
+
+    <div class="juego-card">
+      <h3>GTA VICE CITY</h3>
+      <p>GOTY</p>
+      <button onclick="abrirModal('6')" class="btn-juego">Descargar</button>
+    </div>
+
+    <div class="juego-card">
+      <h3>ROBLOX</h3>
+      <p>GOTY</p>
+      <button onclick="abrirModal('7')" class="btn-juego">Descargar</button>
+    </div>
+
+    <div class="juego-card">
+      <h3>CELESTE</h3>
+      <p>GOTY</p>
+      <button onclick="abrirModal('8')" class="btn-juego">Descargar</button>
+    </div>
+
+    <div class="juego-card">
+      <h3>CASTLE CRASH</h3>
+      <p>GOTY</p>
+      <button onclick="abrirModal('9')" class="btn-juego">Descargar</button>
+    </div>
+
+    <div class="juego-card">
+      <h3>THE FOREST</h3>
+      <p>GOTY</p>
+      <button onclick="abrirModal('10')" class="btn-juego">Descargar</button>
+    </div>
+
+    <div class="juego-card">
+      <h3>ANGRY BIRS</h3>
+      <p>GOTY</p>
+      <button onclick="abrirModal('11')" class="btn-juego">Descargar</button>
+    </div>
+
+    <div class="juego-card">
+      <h3>FIVE NIGTH 1 - 2 - 3</h3>
+      <p>GOTY</p>
+      <button onclick="abrirModal('12')" class="btn-juego">Descargar</button>
+    </div>
+
+    <div class="juego-card">
+      <h3>FIVE NIGTH 4</h3>
+      <p>GOTY</p>
+      <button onclick="abrirModal('13')" class="btn-juego">Descargar</button>
+    </div>
+
+    <div class="juego-card">
+      <h3>TERRARIA</h3>
+      <p>GOTY</p>
+      <button onclick="abrirModal('14')" class="btn-juego">Descargar</button>
+    </div>
+
+    <div class="juego-card">
+      <h3>METAL SLUG</h3>
+      <p>GOTY</p>
+      <button onclick="abrirModal('15')" class="btn-juego">Descargar</button>
+    </div>
+
+    <!-- Agrega más juegos copiando bloques -->
+    <div class="juego-card">
+      <h3>GARRYS MOD</h3>
+      <p>GOTY</p>
+      <button onclick="abrirModal('16')" class="btn-juego">Descargar</button>
+    </div>
+
+    <div class="juego-card">
+      <h3>SUPERMARKET SIMULATOR</h3>
+      <p>GOTY</p>
+      <button onclick="abrirModal('17')" class="btn-juego">Descargar</button>
+    </div>
+     <div class="juego-card">
+      <h3>  SKLAUNCHER MINECRAFT</h3>
+      <p>GOTY</p>
+      <button onclick="abrirModal('18')" class="btn-juego">Descargar</button>
+    </div>
+
+  </div>
+
+  <!-- Modal -->
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <h3>Selecciona Servidor de Descarga</h3>
+      <a id="linkMega" href="#" target="_blank">Descargar desde MEGA</a>
+      <a id="linkMediafire" href="#" target="_blank">Descargar desde MediaFire</a>
+      <a id="linkdrive" href="#" target="_blank">Descargar desde drive</a>
+      <button class="cerrar" onclick="cerrarModal()">Cerrar</button>
+    </div>
+  </div>
+
+  <!-- Redes sociales -->
+  <div class="social-icons">
+   <a href="https://discord.gg/rTmJSh4S" target="_blank" class="discord"><i class="fa-brands fa-discord"></i></a>
+    <a href="https://wa.me/51913550781" target="_blank" class="whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+    <a href="https://www.facebook.com/profile.php?id=61579314076255" target="_blank" class="facebook"><i class="fa-brands fa-facebook"></i></a>
+    <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2Fdian_estampados%2F%3Ffbclid%3DIwZXh0bgNhZW0CMTAAYnJpZBExYml1cVFJTTZwSGh1bzRhVQEeuQuACd9Cgd48rP4Kzm39tRRieviGX_PLMkr9fcEiR94ziSXeI4ZR62p02PI_aem_8j0N5h6w9VVh2C9cjkJOGg&h=AT0e9HF7mnNHA11AAaUhp1FNljSWBBoGSX0mZXTckQSQZIvWtAWLOD_VmR2fEIttT0_bgahkHVpCWvlVQtJe1GrThqLBfAOg-8R72ZN3V5pAwPgkm1QP1LL14CmcJG44PKYrhM6SWMtx0MPh7fQdPw" target="_blank" class="instagram"><i class="fa-brands fa-instagram"></i></a>
+  </div>
+
+  <!-- Botón regresar -->
+   <a href="index.html">
+    <button class="boton">REGRESAR</button>
+  </a>
+
+  <script src="linkjuego.js"></script>
+  <div class="marca-agua">
+  © 2025 - Creado por ChaqueterosJCT
+</div>
+</body>
+</html>
