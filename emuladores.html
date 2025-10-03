@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Descargas de Emuladores</title>
+  <link rel="stylesheet" href="coloremulador.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>🎮 Descarga de Emuladores</h1>
+
+    <div class="juego">
+      <h2>Selecciona tu emulador</h2>
+      <select id="versionSelect">
+        <option value="1">BlueStacks</option>
+        <option value="2">LDPlayer</option>
+        <option value="3">NoxPlayer</option>
+        <option value="4">MemuPlay</option>
+        <option value="5">RetroArch</option>
+      </select>
+      <br><br>
+      <button class="btn-ver" onclick="abrirModal()">Ver enlaces</button>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <div class="modal-contenido" role="dialog" aria-modal="true">
+      <span class="cerrar" onclick="cerrarModal()">&times;</span>
+      <h2>Enlaces de descarga</h2>
+      <p>Selecciona desde dónde descargar:</p>
+      <div class="links-modal">
+        <a id="linkMega" href="#" target="_blank" rel="noopener">Mega</a>
+        <span>|</span>
+        <a id="linkMediafire" href="#" target="_blank" rel="noopener">Mediafire</a>
+        <span>|</span>
+        <a id="linkDrive" href="#" target="_blank" rel="noopener">Drive</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Redes sociales -->
+  <div class="social-links">
+    <a href="https://discord.gg/rTmJSh4S" target="_blank" aria-label="Discord" class="discord"><i class="fa-brands fa-discord"></i></a>
+    <a href="https://wa.me/51913550781" target="_blank" aria-label="WhatsApp" class="whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+    <a href="https://www.facebook.com/profile.php?id=61579314076255" target="_blank" aria-label="Facebook" class="facebook"><i class="fa-brands fa-facebook"></i></a>
+    <a href="https://www.instagram.com/dian_estampados/" target="_blank" aria-label="Instagram" class="instagram"><i class="fa-brands fa-instagram"></i></a>
+  </div>
+
+  <!-- Botón regresar -->
+  <div class="contenedor-boton">
+    <a href="index.html"><button class="boton">⬅ REGRESAR</button></a>
+  </div>
+
+  <script src="linkemulador.js"></script>
+</body>
+</html>

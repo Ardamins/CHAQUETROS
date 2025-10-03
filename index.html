@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ChaqueterosJCT</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Iconos -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Menú superior -->
+  <header class="menu">
+    <h2>ChaqueterosJCT</h2>
+    <nav>
+      <ul>
+        <li><a href="emuladores.html">Emuladores (PROCESO)</a></li>
+        <li><a href="celular.html">Celulares (PROCESO)</a></li>
+        <li><a href="juego.html">Juegos</a></li>
+        <li><a href="#">Extra (PROCESO)</a></li>
+        <li><a href="#">OptiCraft (PROCESO)</a></li>
+        <li><a href="programas.html">Programas</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contenido central -->
+  <main class="contenedor">
+    <section class="lista">
+      <h3>Versiones</h3>
+      <select id="versionSelect">
+        <option value="1">OptiCraft 1.16</option>
+        <option value="2">OptiCraft 1.17</option>
+        <option value="3">OptiCraft 1.18 PORTABLE</option>
+        <option value="4">OptiCraft 1.19</option>
+        <option value="5">OptiCraft 1.20</option>
+        <option value="6">OptiCraft 1.21</option>
+      </select>
+    </section>
+
+    <button class="btn-descargar" onclick="abrirModal()">Descargar</button>
+
+    <!-- Modal -->
+    <div class="modal" id="modal">
+      <div class="modal-content">
+        <h3>Selecciona Servidor de Descarga</h3>
+        <a id="linkMega" href="#" target="_blank">Descargar desde MEGA</a>
+        <a id="linkMediafire" href="#" target="_blank">Descargar desde MediaFire</a>
+        <a id="linkDrive" href="#" target="_blank">Descargar desde Drive</a>
+        <button class="cerrar" onclick="cerrarModal()">Cerrar</button>
+      </div>
+    </div>
+
+    <!-- Servidores -->
+    <section class="servidores">
+      <h4>Servidores</h4>
+      <p><b>IP:</b> none</p>
+      <p><b>Puerto:</b> none</p>
+    </section>
+  </main>
+
+  <!-- Carrusel -->
+  <section class="carrusel">
+    <button class="carrusel-btn prev"><i class="fa-solid fa-chevron-left"></i></button>
+    <div class="carrusel-inner" id="carruselInner">
+      <div class="carrusel-item">
+        <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1790600/header.jpg?t=1753266072" alt="OptiCraft 1.21">
+        <p>🎮 Nuevos juegos disponibles próximamente</p>
+      </div>
+      <div class="carrusel-item">
+        <img src="https://media.tycsports.com/files/2022/06/06/437372/juegos-para-celular_862x485.webp" alt="Celulares">
+        <p>📱 Muy pronto sección Celulares actualizada</p>
+      </div>
+      <div class="carrusel-item">
+        <img src="https://luzmala.com/wp-content/uploads/2019/11/todas-750x500.jpg" alt="Programas">
+        <p>💻 Descarga Programas útiles en nuestra web</p>
+      </div>
+      <div class="carrusel-item">
+        <img src="https://godlike.host/wp-content/uploads/2023/11/case4.webp" alt="Servidores">
+        <p>🔥 Servidores activos 24/7 — IP</p>
+      </div>
+      <div class="carrusel-item">
+        <img src="Imagen de WhatsApp 2025-09-03 a las 22.40.16_8f9b3431.jpg" alt="Emprendimiento">
+        <p>🔥👕 Sigan mi emprendimiento mis p causas</p>
+      </div>
+    </div>
+    <button class="carrusel-btn next"><i class="fa-solid fa-chevron-right"></i></button>
+  </section>
+
+  <!-- Redes sociales -->
+  <div class="social-icons">
+    <a href="https://discord.gg/rTmJSh4S" target="_blank" class="discord"><i class="fa-brands fa-discord"></i></a>
+    <a href="https://wa.me/51913550781" target="_blank" class="whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+    <a href="https://www.facebook.com/profile.php?id=61579314076255" target="_blank" class="facebook"><i class="fa-brands fa-facebook"></i></a>
+    <a href="https://www.instagram.com/dian_estampados" target="_blank" class="instagram"><i class="fa-brands fa-instagram"></i></a>
+  </div>
+
+  <!-- Marca de agua -->
+  <footer class="marca-agua">
+    © 2025 - Creado por <b>ChaqueterosJCT</b>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,200 @@
+/* Fondo general */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: url("https://images4.alphacoders.com/600/600528.png") no-repeat center center fixed;
+  background-size: cover;
+  color: #00ffcc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Contenedor principal */
+.container {
+  background: rgba(0, 0, 0, 0.85);
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.6);
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #00ffcc;
+  font-size: 1.8rem;
+}
+
+h2 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+/* Select */
+select {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  margin-top: 10px;
+  width: 100%;
+  max-width: 260px;
+  background: #111;
+  color: #fff;
+  font-size: 1rem;
+  outline: none;
+}
+
+/* Botones */
+button,
+.boton,
+.btn-ver {
+  margin-top: 20px;
+  padding: 14px 28px;
+  background: #00ffcc;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+button:hover,
+.boton:hover,
+.btn-ver:hover {
+  background: #00cc99;
+  color: white;
+  transform: scale(1.05);
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.85);
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  z-index: 1000;
+}
+
+.modal-contenido {
+  background: #111;
+  padding: 25px;
+  border-radius: 10px;
+  text-align: center;
+  color: #fff;
+  width: 100%;
+  max-width: 360px;
+  border: 2px solid rgba(0,255,204,0.2);
+}
+
+.links-modal {
+  margin-top: 15px;
+}
+
+.links-modal a {
+  color: #00ffcc;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 8px;
+}
+
+.links-modal a:hover {
+  color: #00cc99;
+  text-decoration: underline;
+}
+
+.cerrar {
+  float: right;
+  font-size: 26px;
+  cursor: pointer;
+  color: #ff6b6b;
+}
+
+/* Redes sociales */
+.social-links {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 999;
+}
+
+.social-links a {
+  font-size: 34px;        /* Tamaño iconos PC */
+  color: white;
+  background: #111;
+  padding: 20px;          /* Tamaño del círculo */
+  border-radius: 50%;
+  transition: 0.3s;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-links a:hover {
+  transform: scale(1.2);
+}
+
+.discord { background: #5865F2; }
+.whatsapp { background: #25D366; }
+.facebook { background: #1877F2; }
+.instagram { background: #E1306C; }
+
+/* Botón regresar */
+.contenedor-boton {
+  margin: 30px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.boton {
+  padding: 14px 30px;
+  background: #00ffcc;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.boton:hover {
+  background: #00cc99;
+  color: white;
+  transform: scale(1.05);
+}
+
+/* 📱 Responsive */
+@media (max-width: 480px) {
+  h1 { font-size: 1.5rem; }
+  h2 { font-size: 1rem; }
+  select { font-size: 0.95rem; }
+  button, .boton { font-size: 0.9rem; padding: 12px 20px; }
+
+  /* Redes sociales más grandes en móvil */
+  .social-links {
+    right: 50%;
+    transform: translateX(50%);
+    bottom: 15px;
+    flex-direction: row;  /* en fila en móviles */
+    gap: 18px;
+  }
+
+  .social-links a {
+    font-size: 38px;
+    padding: 22px;
+  }
+}

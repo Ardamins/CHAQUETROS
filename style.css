@@ -1,0 +1,226 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: url("ffe8f50201af51a0956875d2aeeb9e662eb0b228-3840x2160.png") no-repeat center center fixed;
+  background-size: cover;
+  color: #00ff88;
+  min-height: 100vh;
+}
+
+/* Menú */
+.menu {
+  background: rgba(0, 0, 0, 0.85);
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.6);
+}
+.menu h2 {
+  color: #00ff88;
+  margin: 0 0 10px;
+  text-align: center;
+  font-size: 22px;
+  letter-spacing: 1px;
+}
+.menu ul {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  scrollbar-width: none;
+}
+.menu ul::-webkit-scrollbar { display: none; }
+.menu ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  background: #111;
+  padding: 10px 18px;
+  border-radius: 8px;
+  transition: 0.3s;
+  white-space: nowrap;
+}
+.menu ul li a:hover {
+  background: #00ff88;
+  color: #000;
+  transform: scale(1.05);
+  box-shadow: 0 0 8px rgba(0,255,136,0.6);
+}
+
+/* Contenido */
+.contenedor {
+  text-align: center;
+  margin-top: 40px;
+}
+.btn-descargar {
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: #00ff88;
+  border: none;
+  color: black;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.btn-descargar:hover { background: #00cc66; }
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+.modal-content {
+  background: #111;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  color: #fff;
+}
+.modal-content a {
+  display: block;
+  margin: 10px 0;
+  color: #00ff88;
+}
+.modal-content .cerrar {
+  margin-top: 15px;
+  padding: 10px;
+  background: red;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Servidores */
+.servidores {
+  text-align: center;
+  margin: 40px auto;
+  background: rgba(0,0,0,0.7);
+  padding: 15px;
+  border-radius: 10px;
+  width: fit-content;
+}
+
+/* Redes */
+.social-icons {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 15px;
+  z-index: 1500;
+}
+.social-icons a {
+  font-size: 28px;
+  color: white;
+  padding: 14px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+.discord { background: #5865F2; }
+.whatsapp { background: #25D366; }
+.facebook { background: #1877F2; }
+.instagram { background: #E1306C; }
+.social-icons a:hover { transform: scale(1.2); }
+
+/* Marca de agua */
+.marca-agua {
+  position: fixed;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+  background: rgba(0, 0, 0, 0.4);
+  padding: 5px 15px;
+  border-radius: 10px;
+}
+/* Carrusel */
+.carrusel {
+  position: relative;
+  margin: 20px auto;
+  width: 95%;
+  max-width: 500px;   /* semi-rectangular */
+  height: auto;       /* que se adapte al contenido */
+  overflow: hidden;
+  background: rgba(0,0,0,0.85);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 10px rgba(0,255,136,0.5);
+  padding: 5px;
+}
+
+.carrusel-inner {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+}
+
+.carrusel-item {
+  flex: 0 0 100%;   /* una imagen por vez */
+  max-width: 100%;
+  background: rgba(20,20,20,0.95);
+  border-radius: 10px;
+  text-align: center;
+  color: #00ff88;
+  padding: 10px;
+  margin: 0 auto;
+  border: 2px solid #00ff88;
+  box-shadow: 0 0 8px rgba(0,255,136,0.4);
+}
+
+.carrusel-item img {
+  width: 100%;
+  height: 260px;     /* imagen fija pero no gigante */
+  object-fit: contain; /* muestra la imagen completa */
+  border-radius: 8px;
+  border: 1px solid #333;
+  background: #000;
+  margin-bottom: 10px; /* deja espacio para el texto */
+}
+
+.carrusel-item p {
+  margin: 5px 0 0;
+  font-size: 16px;
+  color: #00ff88;
+}
+
+
+
+/* Botones */
+.carrusel-btn {
+  background: rgba(0,0,0,0.6);
+  border: none;
+  color: #00ff00;
+  font-size: 22px;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+  z-index: 1200;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.carrusel-btn.prev { left: 10px; }
+.carrusel-btn.next { right: 10px; }
+.carrusel-btn:hover {
+  background: rgba(0,255,136,0.8);
+  color: black;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .carrusel-btn { display: none; } /* en móvil se desliza con el dedo */
+  .carrusel-item img { max-height: 180px; } /* más pequeñas en móvil */
+}

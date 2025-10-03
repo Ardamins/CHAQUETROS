@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Descarga Celulares</title>
+  <link rel="stylesheet" href="colorcelular.css" />
+  <!-- Font Awesome para los iconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>📱 Descarga de Celulares</h1>
+
+    <div class="juego">
+      <h2>Celular Optimizado</h2>
+      <p>Elige la versión que deseas descargar:</p>
+      <select id="versionSelect">
+        <option value="11">Android 11</option>
+        <option value="12">Android 12</option>
+        <option value="13">Android 13</option>
+        <option value="14">Android 14</option>
+      </select>
+      <br /><br />
+      <button class="btn-ver" onclick="abrirModal()">Ver enlaces</button>
+    </div>
+
+    <!-- Botón regresar centrado abajo -->
+    <div class="contenedor-boton">
+      <a href="index.html"><button class="boton">⬅ REGRESAR</button></a>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <div class="modal-contenido" role="dialog" aria-modal="true">
+      <span class="cerrar" onclick="cerrarModal()" aria-label="Cerrar">&times;</span>
+      <h2>Enlaces de descarga</h2>
+      <p>Selecciona dónde quieres descargar:</p>
+      <div class="links-modal">
+        <a id="linkMega" href="#" target="_blank" rel="noopener">Mega</a>
+        <span>|</span>
+        <a id="linkMediafire" href="#" target="_blank" rel="noopener">Mediafire</a>
+        <span>|</span>
+        <a id="linkDrive" href="#" target="_blank" rel="noopener">Drive</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Redes sociales (fijas en esquina) -->
+  <div class="social-links">
+    <a href="https://discord.gg/rTmJSh4S" target="_blank" aria-label="Discord" class="discord"><i class="fab fa-discord"></i></a>
+    <a href="https://www.facebook.com/profile.php?id=61579314076255" target="_blank" aria-label="Facebook" class="facebook"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://www.youtube.com" target="_blank" aria-label="YouTube" class="youtube"><i class="fab fa-youtube"></i></a>
+    <a href="https://twitter.com" target="_blank" aria-label="Twitter" class="twitter"><i class="fab fa-twitter"></i></a>
+    <a href="https://wa.me/51913550781" target="_blank" aria-label="WhatsApp" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+  </div>
+
+  <script src="linkcelular.js"></script>
+</body>
+</html>
